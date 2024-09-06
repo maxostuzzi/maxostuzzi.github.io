@@ -11,33 +11,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #d3d3d3; /* Light grey background */
             color: #333;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #4CAF50;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
         }
 
         .container {
@@ -45,8 +20,15 @@
             text-align: center;
         }
 
+        .name-header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+
         .about {
-            margin: 20px 0;
+            margin: 40px 0;
         }
 
         footer {
@@ -76,18 +58,11 @@
 </head>
 <body>
 
-<header>
-    <h1>Welcome to My Personal Website</h1>
-    <p>Your tagline or description goes here</p>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
 <div class="container">
+    <div class="name-header">
+        [Your Name]
+    </div>
+
     <section id="about" class="about">
         <h2>About Me</h2>
         <p>Hello! I'm [Your Name], a [Your Profession]. I love working on [skills, interests, or hobbies]. This is my personal website where you can find more about me and my work.</p>
