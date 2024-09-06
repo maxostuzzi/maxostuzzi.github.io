@@ -91,10 +91,36 @@
             content: ''; /* Rimuove il contenuto predefinito */
             position: absolute;
             left: 0; /* Allinea l'immagine a sinistra */
+            top: 50%; /* Centra verticalmente nella linea di base del testo */
+            transform: translateY(-50%); /* Centra verticalmente rispetto alla linea di base del testo */
+            width: 25px; /* Dimensione dell'immagine del bullet point */
+            height: 25px; /* Dimensione dell'immagine del bullet point */
+            background: url('phi.png') no-repeat center center; /* Percorso dell'immagine */
+            background-size: 20px 20px; /* Dimensioni dell'immagine */
+        }
+        ul.custom-bullet2 {
+            list-style-type: none; /* Rimuove i bullet points predefiniti */
+            padding-left: 0; /* Rimuove il padding predefinito */
+            margin-left: 0; /* Rimuove il margine predefinito */
+        }
+        
+        /* Personalizza gli item della lista */
+        ul.custom-bullet2 li {
+            position: relative; /* Necessario per posizionare l'immagine */
+            margin-bottom: 5px; /* Spazio tra gli elementi della lista */
+            padding-left: 30px; /* Spazio per l'immagine del bullet point */
+            line-height: 1.5; /* Imposta l'altezza della linea, se necessario */
+        }
+        
+        /* Aggiunge l'immagine personalizzata come bullet point */
+        ul.custom-bullet2 li::before {
+            content: ''; /* Rimuove il contenuto predefinito */
+            position: absolute;
+            left: 0; /* Allinea l'immagine a sinistra */
             top: 25%; /* Centra verticalmente nella linea di base del testo */
             transform: translateY(-50%); /* Centra verticalmente rispetto alla linea di base del testo */
-            width: 20px; /* Dimensione dell'immagine del bullet point */
-            height: 20px; /* Dimensione dell'immagine del bullet point */
+            width: 25px; /* Dimensione dell'immagine del bullet point */
+            height: 25px; /* Dimensione dell'immagine del bullet point */
             background: url('phi.png') no-repeat center center; /* Percorso dell'immagine */
             background-size: 20px 20px; /* Dimensioni dell'immagine */
         }
