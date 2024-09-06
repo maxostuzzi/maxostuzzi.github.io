@@ -13,11 +13,14 @@
             padding: 0;
             background-color: #d3d3d3; /* Light grey background */
             color: #333;
+            line-height: 1.6; /* Improve text readability */
         }
 
         .container {
             padding: 20px;
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto; /* Center the content */
         }
 
         .name-header {
@@ -27,8 +30,8 @@
             color: #333;
         }
 
-        .about {
-            margin: 40px 0;
+        .about, .preprints, .internships, .contact {
+            margin: 40px 0; /* Add space between sections */
         }
 
         footer {
@@ -54,6 +57,15 @@
         .button:hover {
             background-color: #45a049;
         }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -70,20 +82,21 @@
             I earned my Bachelor's degree in Mathematics in 2021 from University of Padova, under the supervision of Matteo Longo. In 2023, I was awarded with a Master's degree in Mathematics from University of Padova, under the supervision of Alessio Caminata and Alberto Tonolo.</p>
     </section>
 
-    <section id="preprints">
+    <section id="preprints" class="preprints">
         <h2>Preprints</h2>
         <ul>
             <li><a href="https://eprint.iacr.org/2024/564">Multiple Group Action Dlogs with(out) Precomputation</a></li>
         </ul>
     </section>
-    <section id="internships">
+    
+    <section id="internships" class="internships">
         <h2>Internships and Research Visits</h2>
         <ul>
-            <li>Prof. Lorenz Panny at TUM, Munich</a></li>
+            <li>Prof. Lorenz Panny at TUM, Munich</li>
         </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact</h2>
         <p>If you'd like to reach out, feel free to <a class="button" href="mailto:massimo.ostuzzi@rub.de">Email Me</a>.</p>
     </section>
@@ -95,3 +108,4 @@
 
 </body>
 </html>
+
