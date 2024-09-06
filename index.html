@@ -71,30 +71,34 @@
             color: #64a6bd;
         }
 
-                /* CSS per personalizzare i bullet points */
+                /* Rimuove i bullet points predefiniti e allinea il testo */
         ul.custom-bullet {
             list-style-type: none; /* Rimuove i bullet points predefiniti */
             padding-left: 0; /* Rimuove il padding predefinito */
             margin-left: 0; /* Rimuove il margine predefinito */
         }
         
+        /* Personalizza gli item della lista */
         ul.custom-bullet li {
             position: relative; /* Necessario per posizionare l'immagine */
-            padding-left: 40px; /* Spazio per l'immagine del bullet point */
+            padding-left: 30px; /* Spazio per l'immagine del bullet point */
             margin-bottom: 5px; /* Spazio tra gli elementi della lista */
+            line-height: 1.5; /* Imposta l'altezza della linea, se necessario */
         }
         
+        /* Aggiunge l'immagine personalizzata come bullet point */
         ul.custom-bullet li::before {
             content: ''; /* Rimuove il contenuto predefinito */
             position: absolute;
             left: 0; /* Allinea l'immagine a sinistra */
             top: 50%; /* Centra verticalmente */
-            transform: translateY(-100%); /* Centra verticalmente */
+            transform: translateY(-50%); /* Centra verticalmente rispetto alla linea di base del testo */
             width: 20px; /* Dimensione dell'immagine del bullet point */
             height: 20px; /* Dimensione dell'immagine del bullet point */
             background: url('phi.png') no-repeat center center; /* Percorso dell'immagine */
             background-size: 20px 20px; /* Dimensioni dell'immagine */
         }
+
 
     </style>
 </head>
