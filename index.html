@@ -70,13 +70,22 @@
         a:hover {
             color: #64a6bd;
         }
+        ul.custom-bullet {
+            list-style-type: none; /* Rimuove i bullet points predefiniti */
+            padding-left: 0;
+        }
+        ul.custom-bullet li {
+            background: url('https://example.com/path/to/your-bullet-image.png') no-repeat left center;
+            background-size: 20px 20px; /* Dimensioni dell'immagine del bullet point */
+            padding-left: 30px; /* Spazio per l'immagine del bullet point */
+            margin-bottom: 5px; /* Spazio tra gli elementi della lista */
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <div class="name-header">
-        Massimo Ostuzzi
     </div>
 
     <section id="about" class="about">
@@ -88,7 +97,7 @@
 
     <section id="preprints" class="preprints">
         <h2>Preprints</h2>
-        <ul>
+        <ul class="custom-bullet">
             <li><a href="https://eprint.iacr.org/2024/564">Multiple Group Action Dlogs with(out) Precomputation</a><br><i>Together with Alex May</i>.</li>
         </ul>
     </section>
